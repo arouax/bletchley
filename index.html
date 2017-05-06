@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<span id="logo">Bletchley</span>
+			<span id="logo-text">A substitution table for solving simple monoalphabetic ciphers</span>
+		</header>
+		<main>
+			<p><input type="text" name="codephrase" id="cp" oninput="displayTable()" maxlength="110" placeholder="Input your encrypted text here"></p>
+			<p id="result"></p>
+			<p id="res2"></p>
+			<p id="letters"></p>
+		</main>
+		<div id="empty">
+			<span id="nojs">This site requires JavaScript.</span>
+			<span id="howto">
+				Just enter the phrase you're trying to decode (110 chars max), and you'll get a handy substitution table to try and guess which symbols should replace which.<br>It even tells you the most frequent letters in the encoded phrase.<hr/><a href="https://en.wikipedia.org/wiki/Substitution_cipher">Wikipedia</a>
+			</span>
+		</div>
+	</div><!-- wrapper -->
+	<footer><img id="arouax" src="img/arouax-logo-small.png">
+		<p>A small JavaScript project that I made trying to solve a riddle, 2017</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
